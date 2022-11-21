@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~components/*": ["./src/components/*"],
+      "~assets/*": ["./src/assets/*"],
+      "~config": ["./src/config.js"],
+      "~states": ["./src/states/index.js"],
+      "~apis/*": ["./src/apis/*"],
+      "~utils/*": ["./src/utils/*"],
+      "~constants": ["./src/constants/index.js"],
+      "~theme": ["./src/theme/index.js"],
+      "~hooks/*": ["./src/hooks/*"]
+    }
+  }
+}

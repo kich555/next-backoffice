@@ -1,0 +1,34 @@
+{
+  "extends": "next/core-web-vitals",
+  "plugins": ["prettier", "react", "react-hooks"],
+  "settings": { "react": { "version": "detect" } },
+  "rules": {
+    "prettier/prettier": "error",
+    "no-implicit-coercion": "error",
+    "no-extra-boolean-cast": "off",
+    "getter-return": "warn",
+    "no-async-promise-executor": "warn",
+    "prefer-const": "error",
+    "no-var": "error",
+    "curly": ["error", "all"],
+    "eqeqeq": ["error", "always", { "null": "ignore" }],
+    "import/no-duplicates": "error",
+    "no-restricted-imports": [
+      "error",
+      {
+        "patterns": ["@mui/*/*/*", "!@mui/material/test-utils/*"]
+      }
+    ],
+    // "sort-keys": ["error", "asc", { "caseSensitive": true, "natural": false, "minKeys": 2 }],
+    "react/prop-types": "off",
+    "react/display-name": "off",
+    "react/jsx-no-target-blank": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": [
+      "warn",
+      {
+        "additionalHooks": "useRecoilCallback"
+      }
+    ]
+  }
+}
